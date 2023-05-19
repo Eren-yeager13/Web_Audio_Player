@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style .css">
+</head>
+<body>
+  <div class="continer" id="continer">
+        <!-- this is switche from somba to light -->
+        <div class="switcher">
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="ChangeTheme()">
+            <label class="switch" for="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+    <!-- contantnet of the card -->
+    <div class="card" id="card">
+        <h2>Music Player</h2>
+        <!--cover of the song-->
+        <div class="cover" > 
+            <img src="" alt="photo" class="image" id="image">
+        <!--Name of Song-->
+            <p id="name"></p>
+        </div>
+        <!--audio -->
+        <div class="control">
+            <audio src="" id="audio"></audio>
+            <div class="progress_countainer" id="progress_countainer"><div class="progress" id="progress"></div></div>
+        <!-- bouton of controll -->
+            <div class="buttons">
+                <button type="button" class="btn" id="btn_backward" onclick="prevSong()">   <i class="fa-solid fa-backward fa-lg"></i>  </button> 
+                <button type="button" class="btn" id="btn_play">   <i class=" fas fa-solid fa-play fa-xl"></i> </button>
+                <button type="button" class="btn" id="btn_froward" onclick="NextSong()" >   <i class="fa-solid fa-forward fa-lg"></i>   </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script .js"></script>
+
+</body>
+</html>
